@@ -1,10 +1,10 @@
 ﻿@page "/"
 
 
-<div class="container d-flex justify-content-center ">
-    <h1> To-Do App!</h1>
-    <div>
-        <input type="text"  />
+<div class="container d-flex flex-column justify-content-center border">
+    <h1 class="text-center"> To-Do App!</h1>
+    <div class="d-flex gap-1 justify-content-center">
+        <input  type="text"  />
         <button @onclick="text" class="btn btn-primary"> Add </button>
     </div>
 </div>
@@ -13,6 +13,6 @@
 {
     public void text()
     {
-        System.Console.WriteLine("Hello World");
+        Console.WriteLine("Hello World");
     }
 }
