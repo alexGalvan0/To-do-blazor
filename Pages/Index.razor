@@ -1,10 +1,18 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="container d-flex justify-content-center ">
+    <h1> To-Do App!</h1>
+    <div>
+        <input type="text"  />
+        <button @onclick="text" class="btn btn-primary"> Add </button>
+    </div>
+</div>
 
-Welcome to your new app.
-
-<SurveyPrompt Title="How is Blazor working for you?" />
-
+@code
+{
+    public void text()
+    {
+        System.Console.WriteLine("Hello World");
+    }
+}
